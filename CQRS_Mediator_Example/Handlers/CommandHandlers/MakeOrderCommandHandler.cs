@@ -14,7 +14,7 @@ namespace CQRS_Mediator_Example.Handlers.CommandHandlers
             var result = new MakeOrderResponseModel
             {
                 IsSuccess = true,
-                OrderId = Guid.NewGuid()
+                OrderId = request.OrderId
             };
 
             return result;
